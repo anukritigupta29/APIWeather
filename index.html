@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="main-container">
+    <div class="container1">
+
+        <div class="heading">
+            <h1>Weather API</h1>
+        </div>    
+
+        <div class="input-fields">
+
+            <div class="field">
+                <input type="" placeholder="Location" id="loc">
+        
+            </div>
+
+                <div class="field">
+                    <input type="" placeholder="Access Token" id="key" value="ZQWZR7YVRKD5RNDH9NV4LH584">
+
+                </div>
+            </div>        
+
+                <div class="submit">
+                    <button onclick="fetchData()">
+                        Submit
+                    </button>
+
+                
+                </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="heading2">
+            <h1>Weather Data</h1>
+        </div>
+
+        <div class="sub-container">
+
+        <!--   -->
+                   <table>
+                <tbody id="table-body">
+               
+                    <tr colspan="2" rowspan="2">
+                        <td>Location: <span id="loca"></span></td>
+        
+        
+                    </tr>
+                    <tr>
+                        <td>Lat: <span id="lat"></span></td>
+                        <td>Long: <span id="long"></span></td>
+                    </tr>
+                    <tr>
+                        <td>TimeZone: <span id="timezone"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed: <span id="windSpeed"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Pressure: <span id="pressure"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity: <span id="humidity"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Direction: <span id="wind_dir"></span></td>
+                    </tr>
+                    <tr>
+                        <td>UV Index: <span id="uv_index"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Feels Like: <span id="feelslike"></span></td>
+                    </tr>
+        
+                 
+                </tbody>
+
+
+            </table>
+
+        
+    </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
